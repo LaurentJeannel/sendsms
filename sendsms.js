@@ -109,6 +109,8 @@ function send(texte){
 	return ;
 }	// fin fnct send
 
-
+var reg="/"+data.pharsesms+"(.+)/i" ; var rgxp = eval(reg) ; var temp = JarvisIA.reco.match(rgxp) ; console.log(temp)
+var texte = temp[1].trim() ; console.log("on envoie : ",texte)
+ 
 send(texte)// c'est parti
 }
