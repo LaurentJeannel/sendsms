@@ -34,13 +34,13 @@ var XMLHttpRequest = require("./XMLHttpRequest").XMLHttpRequest;
         
                  for (var i=0;i<jsonDevice.devices.length;i++){
                  	if ((jsonDevice.devices[i].nickname != undefined)&&(jsonDevice.devices[i].active!= 'false')){
-                target_device_iden=jsonDevice.devices[i].iden
+                //target_device_iden=jsonDevice.devices[i].iden
                     console.log("nom ou est instal : " +jsonDevice.devices[i].nickname)
                     console.log("target_device_iden : "+jsonDevice.devices[i].iden)
                   
                   }
                  }
-
+target_device_iden=jsonDevice.devices[0].iden
                 
             } else { 
                 console.log("erreur dans le Access-Token")
