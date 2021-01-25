@@ -57,7 +57,7 @@ catch(err){}
 exports.action = (data)=>{
 
 function send(texte){
-
+try{
 		// On structure la requête à envoyer
 		var request = require('request');
 		var body = 	{
@@ -72,6 +72,8 @@ function send(texte){
 			type : 'push'
 		}
 			
+	}catch(err){console.log(err)}
+
 				var options = {
 					method: 'POST',
 					url: 'https://api.pushbullet.com/v2/ephemerals',
