@@ -1,7 +1,10 @@
 !!!!!!! peut entrer en concurence avec le plug push !!!!!!!!! aux phrases du xml
 
+
 inscription sur pushbulett
 https://www.pushbullet.com
+
+téléchargement de l'appi pushbulette sur votre android !! non compatible ios
 
 puis Create Access Token
 https://www.pushbullet.com/#settings/account

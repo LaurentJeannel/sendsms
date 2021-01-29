@@ -1,6 +1,6 @@
 exports.init = () =>{
 try{
-	AccessToken="xxxxxxxxxxxxxxxxxxxxx"
+	AccessToken="xxxxxxxxxxxxxxxxxxxxxxxxx"
 var XMLHttpRequest = require("./XMLHttpRequest").XMLHttpRequest;
 
     var requete1 = new XMLHttpRequest(); // creer un objet de requete
@@ -55,7 +55,7 @@ catch(err){}
 }
 
 exports.action = (data)=>{
-
+console.log(target_device_iden,"        ",source_user_iden)
 function send(texte){
 try{
 		// On structure la requête à envoyer
@@ -100,7 +100,7 @@ try{
 					return ;
 				}
 				else if  (response.statusCode == 200) {
-						console.log("Message à " + data.destinataire + " envoyé.");
+						console.log("Message à " + data.destinataire + " envoyé."+data.numero);
 
 		JarvisIASpeech("Message à " + data.destinataire + " envoyé. "+"|en esperant que la personne le lise|si son portable est allumé|la personne va peut etre répondre")				
 
